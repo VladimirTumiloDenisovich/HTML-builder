@@ -10,6 +10,6 @@ const stream = fs.createReadStream(
 let data = '';
 stream.on('data', chunk => data += chunk);
 stream.on('end', () => {
-  stdout.write(data)
+  stdout.write(data);
 });
 stream.on('error', error => console.log('Error', error.message));

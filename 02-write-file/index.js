@@ -8,7 +8,6 @@ const output = fs.createWriteStream(
 
 stdout.write('Hello!\nDescribe yourself\n');
 stdin.on('data', data => {
-  const toString = {}.toString;
   const dataString = data.toString();
   const exit = 'exit';
   if (dataString.trim() == exit) {
